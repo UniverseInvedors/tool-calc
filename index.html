@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Free Online Calculators — BMI, Loan EMI, Percentage, GST, Age, Tip, Compound Interest | Universe Invedors</title>
+<meta name="description" content="Free online calculators. BMI calculator, loan EMI calculator, percentage calculator, GST calculator, age calculator, tip calculator, compound interest, discount calculator. No sign-up, instant results."/>
+<meta name="keywords" content="BMI calculator online,loan EMI calculator,percentage calculator,GST calculator,age calculator,tip calculator,compound interest calculator,discount calculator,free online calculator"/>
+<link rel="canonical" href="https://calc.universeinvedors.tech/"/>
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large"/>
+<meta name="author" content="Universe Invedors"/>
+<meta property="og:title" content="Free Online Calculators — BMI, Loan, GST, Percentage, More"/>
+<meta property="og:description" content="8 free online calculators. BMI, loan EMI, GST, percentage, age, tip, compound interest, discount. Instant results, no sign-up."/>
+<meta property="og:url" content="https://calc.universeinvedors.tech/"/><meta property="og:type" content="website"/>
+<meta property="og:image" content="https://universeinvedors.tech/og-image.jpg"/><meta property="og:site_name" content="Universe Invedors Tools"/>
+<meta name="twitter:card" content="summary_large_image"/><meta name="twitter:image" content="https://universeinvedors.tech/og-image.jpg"/>
+<link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="icon" href="https://universeinvedors.tech/favicon.ico" sizes="any"/>
+<meta name="theme-color" content="#090c13"/>
+<meta name="google-adsense-account" content="ca-pub-8759032363251002"/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8759032363251002" crossorigin="anonymous"></script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Calculators","url":"https://calc.universeinvedors.tech","applicationCategory":"UtilitiesApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"Universe Invedors","url":"https://universeinvedors.tech"}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Universe Invedors","item":"https://universeinvedors.tech"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://universeinvedors.tech/tools"},{"@type":"ListItem","position":3,"name":"Calculators","item":"https://calc.universeinvedors.tech"}]}]</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#090c13;--surf:#0d1117;--elev:#141b28;--card:#1a2235;--inp:#111827;--t1:#f0f4ff;--t2:#a8b5cc;--t3:#64748b;--t4:#3d4f6e;--acc:#10b981;--acc-h:#34d399;--acc-glow:rgba(16,185,129,.22);--green:#10b981;--blue:#3b82f6;--violet:#8b5cf6;--orange:#f97316;--red:#ef4444;--yellow:#f59e0b;--border:rgba(255,255,255,.07);--bh:rgba(255,255,255,.13);--font:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;--r:8px;--th:50px;--tr:160ms cubic-bezier(.4,0,.2,1)}
+html{font-size:16px}
+body{font-family:var(--font);background:var(--bg);color:var(--t1);min-height:100dvh;display:flex;flex-direction:column;-webkit-font-smoothing:antialiased}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:rgba(255,255,255,.12);border-radius:3px}
+.topbar{height:var(--th);background:rgba(9,12,19,.97);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);display:flex;align-items:center;gap:.5rem;padding:0 .85rem;flex-shrink:0;position:sticky;top:0;z-index:200}
+.logo{font-size:.82rem;font-weight:700;color:var(--t1);text-decoration:none;white-space:nowrap;display:flex;align-items:center;gap:.4rem}.logo:hover{color:var(--acc-h);text-decoration:none}
+.sp{flex:1}
+.badge-priv{display:inline-flex;align-items:center;gap:.25rem;padding:.2rem .55rem;border-radius:100px;font-size:.67rem;font-weight:700;background:rgba(16,185,129,.1);color:var(--acc);border:1px solid rgba(16,185,129,.25)}
+.container{max-width:860px;margin:0 auto;padding:1.25rem 1rem;flex:1;width:100%}
+/* Tabs */
+.tabs{display:flex;gap:.3rem;flex-wrap:wrap;margin-bottom:1.25rem}
+.tab{padding:.42rem .9rem;border-radius:var(--r);font-size:.78rem;font-weight:600;cursor:pointer;border:1px solid var(--border);background:var(--surf);color:var(--t2);transition:all var(--tr)}
+.tab:hover{border-color:var(--bh);color:var(--t1)}.tab.active{background:rgba(16,185,129,.12);border-color:rgba(16,185,129,.35);color:var(--acc-h)}
+/* Calc panels */
+.calc-panel{display:none}.calc-panel.active{display:block}
+.calc-card{background:var(--surf);border:1px solid var(--border);border-radius:14px;padding:1.5rem;margin-bottom:1.25rem}
+.calc-title{font-size:1rem;font-weight:700;margin-bottom:.4rem;display:flex;align-items:center;gap:.5rem}
+.calc-sub{font-size:.8rem;color:var(--t2);margin-bottom:1.1rem;line-height:1.5}
+/* Form */
+.field{margin-bottom:.85rem}
+.field label{display:block;font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--t3);margin-bottom:.3rem}
+.field input,.field select{width:100%;padding:.5rem .75rem;background:var(--inp);border:1px solid var(--border);border-radius:var(--r);color:var(--t1);font-size:.88rem;outline:none;transition:border-color var(--tr)}
+.field input:focus,.field select:focus{border-color:rgba(16,185,129,.45)}
+.field-row{display:flex;gap:.65rem;flex-wrap:wrap}
+.field-row .field{flex:1;min-width:120px}
+.btn{display:inline-flex;align-items:center;gap:.35rem;padding:.5rem 1.25rem;border-radius:var(--r);font-size:.85rem;font-weight:600;cursor:pointer;border:none;transition:all var(--tr);white-space:nowrap}
+.btn-calc{background:var(--acc);color:#000}.btn-calc:hover{background:var(--acc-h);box-shadow:0 0 14px var(--acc-glow)}
+.btn-ghost{background:rgba(255,255,255,.05);color:var(--t2);border:1px solid var(--border)}.btn-ghost:hover{background:rgba(255,255,255,.09);color:var(--t1)}
+/* Result */
+.result-box{background:var(--card);border:1px solid rgba(16,185,129,.2);border-radius:var(--r);padding:1rem 1.25rem;margin-top:1rem;display:none}
+.result-box.show{display:block}
+.result-main{font-size:2rem;font-weight:800;color:var(--acc-h);letter-spacing:-.03em;margin-bottom:.25rem}
+.result-label{font-size:.78rem;color:var(--t2);margin-bottom:.75rem}
+.result-detail{display:flex;flex-wrap:wrap;gap:.5rem 1.25rem;padding-top:.65rem;border-top:1px solid var(--border)}
+.result-detail-item{font-size:.78rem;color:var(--t3)}.result-detail-item span{color:var(--t1);font-weight:600;font-family:monospace}
+/* BMI chart */
+.bmi-bar{height:8px;border-radius:4px;background:linear-gradient(90deg,#3b82f6 0%,#3b82f6 25%,#10b981 25%,#10b981 50%,#f59e0b 50%,#f59e0b 75%,#ef4444 75%);margin:1rem 0;position:relative}
+.bmi-marker{position:absolute;top:-4px;width:4px;height:16px;background:#fff;border-radius:2px;box-shadow:0 0 4px rgba(0,0,0,.5);transition:left .3s}
+.bmi-labels{display:flex;justify-content:space-between;font-size:.65rem;color:var(--t4)}
+/* Ad slot */
+.ad-slot{padding:.5rem;text-align:center;border-top:1px solid var(--border);margin-top:1.5rem}
+.seo-footer{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.3rem .75rem;padding:.35rem .75rem;border-top:1px solid var(--border);background:var(--surf);font-size:.65rem;color:var(--t3)}
+.seo-footer a{color:var(--t3)}.seo-footer a:hover{color:var(--t2);text-decoration:none}.sf-links{display:flex;flex-wrap:wrap;gap:.2rem .6rem}
+.toasts{position:fixed;bottom:2.5rem;right:1rem;z-index:999;display:flex;flex-direction:column;gap:.4rem;pointer-events:none}
+.toast{padding:.5rem .85rem;border-radius:var(--r);font-size:.75rem;font-weight:600;background:var(--card);border:1px solid var(--border);color:var(--t1);box-shadow:0 6px 24px rgba(0,0,0,.5);animation:tin .2s ease}
+.toast.ok{border-color:rgba(16,185,129,.35);color:var(--acc)}.toast.err{border-color:rgba(239,68,68,.35);color:#f87171}
+@keyframes tin{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:500px){.field-row{flex-direction:column}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a href="https://universeinvedors.tech/tools" class="logo">🧮 <span style="color:var(--acc-h)">Calculators</span></a>
+  <div class="sp"></div>
+  <span class="badge-priv">🔒 Free · No sign-up</span>
+</header>
+
+<div class="container">
+  <h1 style="font-size:1.5rem;font-weight:800;letter-spacing:-.03em;margin-bottom:.3rem">Free Online Calculators</h1>
+  <p style="font-size:.85rem;color:var(--t2);margin-bottom:1.25rem">8 free calculators for everyday use. BMI, loan EMI, percentage, GST, age, tip, compound interest, and discount. Instant results, no sign-up required.</p>
+
+  <div class="tabs">
+    <div class="tab active" onclick="switchCalc('bmi',this)">🏃 BMI</div>
+    <div class="tab" onclick="switchCalc('loan',this)">💰 Loan EMI</div>
+    <div class="tab" onclick="switchCalc('percent',this)">% Percentage</div>
+    <div class="tab" onclick="switchCalc('gst',this)">📋 GST</div>
+    <div class="tab" onclick="switchCalc('age',this)">🎂 Age</div>
+    <div class="tab" onclick="switchCalc('tip',this)">🍽 Tip</div>
+    <div class="tab" onclick="switchCalc('compound',this)">📈 Compound</div>
+    <div class="tab" onclick="switchCalc('discount',this)">🏷 Discount</div>
+  </div>
+
+  <!-- BMI -->
+  <div id="calc-bmi" class="calc-panel active">
+    <div class="calc-card">
+      <div class="calc-title">🏃 BMI Calculator</div>
+      <div class="calc-sub">Body Mass Index — assesses whether your weight is healthy for your height.</div>
+      <div class="field-row">
+        <div class="field"><label>Weight (kg)</label><input type="number" id="bmi-weight" placeholder="70" oninput="calcBMI()"></div>
+        <div class="field"><label>Height (cm)</label><input type="number" id="bmi-height" placeholder="175" oninput="calcBMI()"></div>
+      </div>
+      <div id="bmi-result" class="result-box">
+        <div class="result-main" id="bmi-value">—</div>
+        <div class="result-label" id="bmi-category">Enter values to calculate</div>
+        <div class="bmi-bar"><div class="bmi-marker" id="bmi-marker" style="left:0%"></div></div>
+        <div class="bmi-labels"><span>Underweight</span><span>Normal</span><span>Overweight</span><span>Obese</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Loan EMI -->
+  <div id="calc-loan" class="calc-panel">
+    <div class="calc-card">
+      <div class="calc-title">💰 Loan EMI Calculator</div>
+      <div class="calc-sub">Calculate your monthly loan payment (Equated Monthly Installment).</div>
+      <div class="field"><label>Loan amount</label><input type="number" id="loan-amount" placeholder="500000" oninput="calcLoan()"></div>
+      <div class="field-row">
+        <div class="field"><label>Interest rate (% per year)</label><input type="number" id="loan-rate" placeholder="8.5" step="0.1" oninput="calcLoan()"></div>
+        <div class="field"><label>Tenure (months)</label><input type="number" id="loan-tenure" placeholder="60" oninput="calcLoan()"></div>
+      </div>
+      <div id="loan-result" class="result-box">
+        <div class="result-main" id="loan-emi">—</div>
+        <div class="result-label">Monthly EMI</div>
+        <div class="result-detail">
+          <div class="result-detail-item">Total interest: <span id="loan-interest">—</span></div>
+          <div class="result-detail-item">Total payment: <span id="loan-total">—</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Percentage -->
+  <div id="calc-percent" class="calc-panel">
+    <div class="calc-card">
+      <div class="calc-title">% Percentage Calculator</div>
+      <div class="calc-sub">Calculate percentages, increase/decrease, and find what percentage one number is of another.</div>
+      <div class="field-row">
+        <div class="field"><label>What is</label><input type="number" id="pct-a" placeholder="25" oninput="calcPercent()"></div>
+        <div class="field"><label>% of</label><input type="number" id="pct-b" placeholder="200" oninput="calcPercent()"></div>
+      </div>
+      <div id="pct-result" class="result-box">
+        <div class="result-main" id="pct-value">—</div>
+        <div class="result-label" id="pct-label">Answer</div>
+      </div>
+      <div style="margin-top:1rem;padding-top:1rem;border-top:1px solid var(--border)">
+        <div style="font-size:.78rem;font-weight:600;color:var(--t2);margin-bottom:.5rem">Percentage change</div>
+        <div class="field-row">
+          <div class="field"><label>From</label><input type="number" id="pct-from" placeholder="100" oninput="calcPctChange()"></div>
+          <div class="field"><label>To</label><input type="number" id="pct-to" placeholder="125" oninput="calcPctChange()"></div>
+        </div>
+        <div id="pct-change-result" class="result-box">
+          <div class="result-main" id="pct-change-value" style="font-size:1.4rem">—</div>
+          <div class="result-label" id="pct-change-label">Change</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GST -->
+  <div id="calc-gst" class="calc-panel">
+    <div class="calc-card">
+      <div class="calc-title">📋 GST Calculator</div>
+      <div class="calc-sub">Add or remove GST from any amount. Supports 5%, 12%, 18%, 28% rates.</div>
+      <div class="field"><label>Amount</label><input type="number" id="gst-amount" placeholder="1000" oninput="calcGST()"></div>
+      <div class="field-row">
+        <div class="field"><label>GST rate</label>
+          <select id="gst-rate" onchange="calcGST()">
+            <option value="5">5%</option><option value="12">12%</option><option value="18" selected>18%</option><option value="28">28%</option>
+          </select>
+        </div>
+        <div class="field"><label>Operation</label>
+          <select id="gst-mode" onchange="calcGST()">
+            <option value="add">Add GST</option><option value="remove">Remove GST</option>
+          </select>
+        </div>
+      </div>
+      <div id="gst-result" class="result-box">
+        <div class="result-main" id="gst-total">—</div>
+        <div class="result-label" id="gst-total-label">Total (with GST)</div>
+        <div class="result-detail">
+          <div class="result-detail-item">Base amount: <span id="gst-base">—</span></div>
+          <div class="result-detail-item">GST amount: <span id="gst-tax">—</span></div>
+          <div class="result-detail-item">CGST: <span id="gst-cgst">—</span></div>
+          <div class="result-detail-item">SGST: <span id="gst-sgst">—</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Age -->
+  <div id="calc-age" class="calc-panel">
+    <div class="calc-card">
+      <div class="calc-title">🎂 Age Calculator</div>
+      <div class="calc-sub">Calculate exact age in years, months, days, hours and total days.</div>
+      <div class="field-row">
+        <div class="field"><label>Date of birth</label><input type="date" id="age-dob" oninput="calcAge()"></div>
+        <div class="field"><label>Calculate to date</label><input type="date" id="age-to" oninput="calcAge()"></div>
+      </div>
+      <div id="age-result" class="result-box">
+        <div class="result-main" id="age-years" style="font-size:1.5rem">—</div>
+        <div class="result-label" id="age-detailed">Enter your date of birth</div>
+        <div class="result-detail">
+          <div class="result-detail-item">Total months: <span id="age-months">—</span></div>
+          <div class="result-detail-item">Total days: <span id="age-days">—</span></div>
+          <div class="result-detail-item">Total hours: <span id="age-hours">—</span></div>
+          <div class="result-detail-item">Next birthday: <span id="age-next">—</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tip -->
+  <div id="calc-tip" class="calc-panel">
+    <div class="calc-card">
+      <div class="calc-title">🍽 Tip Calculator</div>
+      <div class="calc-sub">Calculate tip and split the bill among friends.</div>
+      <div class="field"><label>Bill amount</label><input type="number" id="tip-bill" placeholder="500" oninput="calcTip()"></div>
+      <div class="field-row">
+        <div class="field"><label>Tip percentage</label><input type="number" id="tip-pct" value="10" oninput="calcTip()"></div>
+        <div class="field"><label>Split between (people)</label><input type="number" id="tip-split" value="1" min="1" oninput="calcTip()"></div>
+      </div>
+      <div style="display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:.85rem">
+        <button class="btn btn-ghost" style="font-size:.72rem;padding:.35rem .7rem" onclick="setTipPct(5)">5%</button>
+        <button class="btn btn-ghost" style="font-size:.72rem;padding:.35rem .7rem" onclick="setTipPct(10)">10%</button>
+        <button class="btn btn-ghost" style="font-size:.72rem;padding:.35rem .7rem" onclick="setTipPct(15)">15%</button>
+        <button class="btn btn-ghost" style="font-size:.72rem;padding:.35rem .7rem" onclick="setTipPct(18)">18%</button>
+        <button class="btn btn-ghost" style="font-size:.72rem;padding:.35rem .7rem" onclick="setTipPct(20)">20%</button>
+      </div>
+      <div id="tip-result" class="result-box">
+        <div class="result-main" id="tip-per-person">—</div>
+        <div class="result-label">Per person (including tip)</div>
+        <div class="result-detail">
+          <div class="result-detail-item">Tip amount: <span id="tip-amount">—</span></div>
+          <div class="result-detail-item">Total bill: <span id="tip-total">—</span></div>
+          <div class="result-detail-item">Per person (bill only): <span id="tip-bill-each">—</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Compound Interest -->
+  <div id="calc-compound" class="calc-panel">
+    <div class="calc-card">
+      <div class="calc-title">📈 Compound Interest Calculator</div>
+      <div class="calc-sub">See how your investment grows with compound interest over time.</div>
+      <div class="field"><label>Principal amount</label><input type="number" id="ci-principal" placeholder="100000" oninput="calcCompound()"></div>
+      <div class="field-row">
+        <div class="field"><label>Annual interest rate (%)</label><input type="number" id="ci-rate" placeholder="8" step="0.1" oninput="calcCompound()"></div>
+        <div class="field"><label>Years</label><input type="number" id="ci-years" placeholder="10" oninput="calcCompound()"></div>
+      </div>
+      <div class="field"><label>Compounding frequency</label>
+        <select id="ci-freq" onchange="calcCompound()">
+          <option value="1">Annually (1/year)</option>
+          <option value="2">Semi-annually (2/year)</option>
+          <option value="4" selected>Quarterly (4/year)</option>
+          <option value="12">Monthly (12/year)</option>
+          <option value="365">Daily (365/year)</option>
+        </select>
+      </div>
+      <div id="ci-result" class="result-box">
+        <div class="result-main" id="ci-final">—</div>
+        <div class="result-label">Final amount</div>
+        <div class="result-detail">
+          <div class="result-detail-item">Interest earned: <span id="ci-interest">—</span></div>
+          <div class="result-detail-item">Growth: <span id="ci-growth">—</span></div>
+          <div class="result-detail-item">Principal: <span id="ci-principal-show">—</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Discount -->
+  <div id="calc-discount" class="calc-panel">
+    <div class="calc-card">
+      <div class="calc-title">🏷 Discount Calculator</div>
+      <div class="calc-sub">Calculate the final price after discount and how much you save.</div>
+      <div class="field"><label>Original price</label><input type="number" id="disc-price" placeholder="2500" oninput="calcDiscount()"></div>
+      <div class="field-row">
+        <div class="field"><label>Discount %</label><input type="number" id="disc-pct" placeholder="20" oninput="calcDiscount()"></div>
+        <div class="field"><label>Additional flat discount</label><input type="number" id="disc-flat" placeholder="0" oninput="calcDiscount()"></div>
+      </div>
+      <div id="disc-result" class="result-box">
+        <div class="result-main" id="disc-final">—</div>
+        <div class="result-label">Final price you pay</div>
+        <div class="result-detail">
+          <div class="result-detail-item">You save: <span id="disc-save">—</span></div>
+          <div class="result-detail-item">Effective discount: <span id="disc-effective">—</span></div>
+          <div class="result-detail-item">Original price: <span id="disc-original">—</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ad-slot" aria-label="Advertisement">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8759032363251002" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+</div>
+
+<footer class="seo-footer">
+  <div class="sf-links">
+    <a href="https://universeinvedors.tech">Universe Invedors</a><a href="https://universeinvedors.tech/tools">All Tools</a>
+    <a href="https://code.universeinvedors.tech">Code</a><a href="https://json.universeinvedors.tech">JSON</a>
+    <a href="https://qr.universeinvedors.tech">QR Code</a><a href="https://color.universeinvedors.tech">Colors</a>
+    <a href="https://text.universeinvedors.tech">Text</a><a href="https://diagram.universeinvedors.tech">Diagrams</a>
+    <a href="https://chart.universeinvedors.tech">Charts</a><a href="https://ocr.universeinvedors.tech">OCR</a>
+    <a href="https://pdf.universeinvedors.tech">PDF</a><a href="https://image.universeinvedors.tech">Image</a>
+    <a href="https://3d.universeinvedors.tech">3D</a><a href="https://map.universeinvedors.tech">Maps</a>
+    <a href="https://media.universeinvedors.tech">Media</a>
+  </div>
+  <span>© 2024 Universe Invedors · Free Online Calculators · No sign-up</span>
+</footer>
+<div class="toasts" id="toasts"></div>
+<script>
+function switchCalc(name,btn){
+  document.querySelectorAll('.calc-panel').forEach(function(p){p.classList.remove('active')})
+  document.querySelectorAll('.tab').forEach(function(t){t.classList.remove('active')})
+  document.getElementById('calc-'+name).classList.add('active')
+  btn.classList.add('active')
+}
+function fmt(n){return n.toLocaleString('en-IN',{maximumFractionDigits:2})}
+function calcBMI(){
+  var w=parseFloat(document.getElementById('bmi-weight').value)
+  var h=parseFloat(document.getElementById('bmi-height').value)/100
+  if(!w||!h){document.getElementById('bmi-result').classList.remove('show');return}
+  var bmi=w/(h*h)
+  document.getElementById('bmi-value').textContent=bmi.toFixed(1)
+  var cat='',pct=0
+  if(bmi<18.5){cat='Underweight';pct=Math.max(5,(bmi/18.5)*25)}
+  else if(bmi<25){cat='Normal weight ✓';pct=25+((bmi-18.5)/6.5)*25}
+  else if(bmi<30){cat='Overweight';pct=50+((bmi-25)/5)*25}
+  else{cat='Obese';pct=Math.min(95,75+((bmi-30)/10)*25)}
+  document.getElementById('bmi-category').textContent=cat
+  document.getElementById('bmi-marker').style.left=pct+'%'
+  document.getElementById('bmi-result').classList.add('show')
+}
+function calcLoan(){
+  var p=parseFloat(document.getElementById('loan-amount').value)
+  var r=parseFloat(document.getElementById('loan-rate').value)/12/100
+  var n=parseInt(document.getElementById('loan-tenure').value)
+  if(!p||!n){document.getElementById('loan-result').classList.remove('show');return}
+  var emi=r===0?p/n:p*r*Math.pow(1+r,n)/(Math.pow(1+r,n)-1)
+  var total=emi*n,interest=total-p
+  document.getElementById('loan-emi').textContent='₹'+fmt(emi)
+  document.getElementById('loan-interest').textContent='₹'+fmt(interest)
+  document.getElementById('loan-total').textContent='₹'+fmt(total)
+  document.getElementById('loan-result').classList.add('show')
+}
+function calcPercent(){
+  var a=parseFloat(document.getElementById('pct-a').value)
+  var b=parseFloat(document.getElementById('pct-b').value)
+  if(isNaN(a)||isNaN(b)){document.getElementById('pct-result').classList.remove('show');return}
+  var result=(a/100)*b
+  document.getElementById('pct-value').textContent=fmt(result)
+  document.getElementById('pct-label').textContent=a+'% of '+b+' = '+fmt(result)
+  document.getElementById('pct-result').classList.add('show')
+}
+function calcPctChange(){
+  var from=parseFloat(document.getElementById('pct-from').value)
+  var to=parseFloat(document.getElementById('pct-to').value)
+  if(isNaN(from)||isNaN(to)){document.getElementById('pct-change-result').classList.remove('show');return}
+  var change=to-from,pct=from===0?0:(change/from)*100
+  document.getElementById('pct-change-value').textContent=(pct>=0?'+':'')+pct.toFixed(2)+'%'
+  document.getElementById('pct-change-label').textContent=(pct>=0?'Increase':'Decrease')+' of '+fmt(Math.abs(change))
+  document.getElementById('pct-change-value').style.color=pct>=0?'var(--green)':'#f87171'
+  document.getElementById('pct-change-result').classList.add('show')
+}
+function calcGST(){
+  var amt=parseFloat(document.getElementById('gst-amount').value)
+  var rate=parseFloat(document.getElementById('gst-rate').value)
+  var mode=document.getElementById('gst-mode').value
+  if(isNaN(amt)){document.getElementById('gst-result').classList.remove('show');return}
+  var base,tax,total
+  if(mode==='add'){base=amt;tax=amt*rate/100;total=amt+tax}
+  else{total=amt;base=amt/(1+rate/100);tax=amt-base}
+  document.getElementById('gst-total').textContent='₹'+fmt(total)
+  document.getElementById('gst-total-label').textContent=mode==='add'?'Total (with GST)':'Amount (excluding GST)'
+  document.getElementById('gst-base').textContent='₹'+fmt(base)
+  document.getElementById('gst-tax').textContent='₹'+fmt(tax)
+  document.getElementById('gst-cgst').textContent='₹'+fmt(tax/2)
+  document.getElementById('gst-sgst').textContent='₹'+fmt(tax/2)
+  document.getElementById('gst-result').classList.add('show')
+}
+function calcAge(){
+  var dob=document.getElementById('age-dob').value
+  var to=document.getElementById('age-to').value||new Date().toISOString().slice(0,10)
+  if(!dob){document.getElementById('age-result').classList.remove('show');return}
+  var d1=new Date(dob),d2=new Date(to)
+  if(d2<d1){document.getElementById('age-years').textContent='Invalid';return}
+  var years=d2.getFullYear()-d1.getFullYear()
+  var months=d2.getMonth()-d1.getMonth()
+  var days=d2.getDate()-d1.getDate()
+  if(days<0){months--;days+=new Date(d2.getFullYear(),d2.getMonth(),0).getDate()}
+  if(months<0){years--;months+=12}
+  document.getElementById('age-years').textContent=years+' years'
+  document.getElementById('age-detailed').textContent=years+'y '+months+'m '+days+'d'
+  document.getElementById('age-months').textContent=(years*12+months)
+  document.getElementById('age-days').textContent=fmt(Math.floor((d2-d1)/(1000*60*60*24)))
+  document.getElementById('age-hours').textContent=fmt(Math.floor((d2-d1)/(1000*60*60)))
+  var nextBday=new Date(d2.getFullYear(),d1.getMonth(),d1.getDate())
+  if(nextBday<d2)nextBday.setFullYear(d2.getFullYear()+1)
+  var daysLeft=Math.ceil((nextBday-d2)/(1000*60*60*24))
+  document.getElementById('age-next').textContent=daysLeft+' days'
+  document.getElementById('age-result').classList.add('show')
+}
+function calcTip(){
+  var bill=parseFloat(document.getElementById('tip-bill').value)
+  var pct=parseFloat(document.getElementById('tip-pct').value)||0
+  var split=parseInt(document.getElementById('tip-split').value)||1
+  if(isNaN(bill)){document.getElementById('tip-result').classList.remove('show');return}
+  var tip=bill*pct/100,total=bill+tip,perPerson=total/split
+  document.getElementById('tip-per-person').textContent='₹'+fmt(perPerson)
+  document.getElementById('tip-amount').textContent='₹'+fmt(tip)
+  document.getElementById('tip-total').textContent='₹'+fmt(total)
+  document.getElementById('tip-bill-each').textContent='₹'+fmt(bill/split)
+  document.getElementById('tip-result').classList.add('show')
+}
+function setTipPct(v){document.getElementById('tip-pct').value=v;calcTip()}
+function calcCompound(){
+  var p=parseFloat(document.getElementById('ci-principal').value)
+  var r=parseFloat(document.getElementById('ci-rate').value)/100
+  var t=parseFloat(document.getElementById('ci-years').value)
+  var n=parseInt(document.getElementById('ci-freq').value)
+  if(isNaN(p)||isNaN(r)||isNaN(t)){document.getElementById('ci-result').classList.remove('show');return}
+  var final=p*Math.pow(1+r/n,n*t)
+  var interest=final-p
+  document.getElementById('ci-final').textContent='₹'+fmt(final)
+  document.getElementById('ci-interest').textContent='₹'+fmt(interest)
+  document.getElementById('ci-growth').textContent=(interest/p*100).toFixed(1)+'%'
+  document.getElementById('ci-principal-show').textContent='₹'+fmt(p)
+  document.getElementById('ci-result').classList.add('show')
+}
+function calcDiscount(){
+  var price=parseFloat(document.getElementById('disc-price').value)
+  var pct=parseFloat(document.getElementById('disc-pct').value)||0
+  var flat=parseFloat(document.getElementById('disc-flat').value)||0
+  if(isNaN(price)){document.getElementById('disc-result').classList.remove('show');return}
+  var discAmount=price*pct/100
+  var final=price-discAmount-flat
+  var totalSaved=price-final
+  document.getElementById('disc-final').textContent='₹'+fmt(final)
+  document.getElementById('disc-save').textContent='₹'+fmt(totalSaved)
+  document.getElementById('disc-effective').textContent=(totalSaved/price*100).toFixed(1)+'%'
+  document.getElementById('disc-original').textContent='₹'+fmt(price)
+  document.getElementById('disc-result').classList.add('show')
+}
+function toast(msg,type){var e=document.createElement('div');e.className='toast'+(type?' '+type:'');e.textContent=msg;document.getElementById('toasts').appendChild(e);setTimeout(function(){e.remove()},2800)}
+</script>
+</body>
+</html>
