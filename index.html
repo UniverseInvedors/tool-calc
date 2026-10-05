@@ -14,6 +14,7 @@
 <meta property="og:image" content="https://universeinvedors.tech/og-image.jpg"/><meta property="og:site_name" content="Universe Invedors Tools"/>
 <meta name="twitter:card" content="summary_large_image"/><meta name="twitter:image" content="https://universeinvedors.tech/og-image.jpg"/>
 <link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="icon" href="https://universeinvedors.tech/favicon.ico" sizes="any"/>
+<link rel="manifest" href="/manifest.json"/>
 <meta name="theme-color" content="#090c13"/>
 <meta name="google-adsense-account" content="ca-pub-8759032363251002"/>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8759032363251002" crossorigin="anonymous"></script>
@@ -422,7 +423,19 @@ function switchCalc(name,btn){
   document.querySelectorAll('.tab').forEach(function(t){t.classList.remove('active')})
   document.getElementById('calc-'+name).classList.add('active')
   btn.classList.add('active')
+  // Update URL for sharing
+  try{var u=new URL(location.href);u.searchParams.set('c',name);history.replaceState(null,'',u.toString())}catch(e){}
 }
+// Restore from URL on load
+;(function(){
+  try{
+    var name=new URLSearchParams(location.search).get('c')
+    if(name){
+      var btn=document.querySelector('[onclick*="switchCalc(\''+name+'\'"]')
+      if(btn&&document.getElementById('calc-'+name))switchCalc(name,btn)
+    }
+  }catch(e){}
+})()
 function fmt(n){return n.toLocaleString('en-IN',{maximumFractionDigits:2})}
 function calcBMI(){
   var w=parseFloat(document.getElementById('bmi-weight').value)
@@ -573,6 +586,9 @@ function toast(msg,type){var e=document.createElement('div');e.className='toast'
     b.addEventListener('click',function(){gaEvent('result_copied','Calculator','copy');});
   });
 })();
+</script>
+<script>
+if('serviceWorker' in navigator){navigator.serviceWorker.register('/sw.js').catch(function(){})}
 </script>
 </body>
 </html>>
