@@ -158,6 +158,12 @@ h1,h2,h3,h4{letter-spacing:-.02em;line-height:1.2;color:var(--text-1)}
   <div class="topbar-sep"></div>
   <div class="topbar-spacer"></div>
   <span class="badge-free">Free · No sign-up</span>
+  <button class="btn btn-ghost btn-sm" onclick="copyResult()" title="Copy last result">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>Copy
+  </button>
+  <button class="btn btn-ghost btn-sm" onclick="resetAll()" title="Reset all fields">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 102.13-9.36L1 10"/></svg>Reset
+  </button>
   <button class="tour-btn" onclick="startTour()" aria-label="Start guided tour" title="Take a quick tour"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg> Tour</button>
 </header>
 
@@ -587,6 +593,39 @@ function calcDiscount(){
   document.getElementById('disc-result').classList.add('show')
 }
 function toast(msg,type){var e=document.createElement('div');e.className='toast'+(type?' '+type:'');e.textContent=msg;document.getElementById('toasts').appendChild(e);setTimeout(function(){e.remove()},2800)}
+
+// ── COPY RESULT & RESET ──────────────────────────────────────────
+function copyResult() {
+  // Collect all visible result text
+  const results = []
+  document.querySelectorAll('.result-value, .result-main, [id$="-result"] .result-value, .calc-result').forEach(el => {
+    const txt = el.textContent.trim()
+    if (txt && txt !== '—') results.push(txt)
+  })
+  // Also grab any element with class "show" that has a result
+  document.querySelectorAll('.result.show .result-value, .result-card.show').forEach(el => {
+    const txt = el.textContent.replace(/\s+/g,' ').trim()
+    if (txt) results.push(txt)
+  })
+  const text = results.length ? results.join('\n') : 'No result yet — run a calculation first'
+  navigator.clipboard.writeText(text).then(() => toast('Result copied!', 'ok')).catch(() => {
+    // Fallback
+    const ta = document.createElement('textarea')
+    ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0'
+    document.body.appendChild(ta); ta.select()
+    document.execCommand('copy'); document.body.removeChild(ta)
+    toast('Result copied!', 'ok')
+  })
+}
+
+function resetAll() {
+  document.querySelectorAll('input[type=number], input[type=text], input[type=date]').forEach(el => {
+    el.value = el.defaultValue || ''
+  })
+  document.querySelectorAll('select').forEach(el => { el.selectedIndex = 0 })
+  document.querySelectorAll('.result, .result-card').forEach(el => el.classList.remove('show'))
+  toast('All fields reset', 'info')
+}
 </script>
 <script>
 // GA4 Custom Events — Calculator
